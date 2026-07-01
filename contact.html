@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ichiro Consulting</title>
+<meta name="description" content="Get in touch with Ichiro Consulting to talk through your project. Email hello@ichiro.consulting or use the form below.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">
+      <span class="mark">乙</span>
+      Ichiro Consulting
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta">Book a Consult</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" style="padding-bottom: 40px;">
+    <div class="container">
+      <span class="eyebrow">Get In Touch</span>
+      <h1>Let's talk about what you're <span class="highlight">building</span>.</h1>
+      <p class="lead">Whether it's a well-scoped project or a vague, expensive-sounding problem — tell us
+      about it. We reply to every enquiry within one business day.</p>
+    </div>
+  </section>
+
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="contact-wrap">
+
+        <div class="contact-info">
+          <h2>Contact details</h2>
+          <p>Prefer email? Reach us directly and we'll get back to you within one business day.</p>
+
+          <div class="info-block">
+            <div class="label">Email</div>
+            <div class="value"><a href="mailto:hello@ichiro.consulting">hello@ichiro.consulting</a></div>
+          </div>
+
+          <div class="info-block">
+            <div class="label">Response Time</div>
+            <div class="value">Within 1 business day</div>
+          </div>
+
+          <div class="info-block">
+            <div class="label">Engagement Types</div>
+            <div class="value">Fixed-scope projects, embedded teams, retainers</div>
+          </div>
+        </div>
+
+        <!--
+          To make this form actually deliver messages to your inbox, sign up
+          for a free form endpoint (e.g. https://formspree.io) and replace
+          YOUR_FORM_ID below with the ID they give you. Until then this form
+          will not send anywhere.
+        -->
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <div>
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+            </div>
+            <div>
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company name">
+            </div>
+            <div>
+              <label for="budget">Estimated budget</label>
+              <select id="budget" name="budget">
+                <option value="">Select a range</option>
+                <option value="under-10k">Under $10k</option>
+                <option value="10k-50k">$10k – $50k</option>
+                <option value="50k-150k">$50k – $150k</option>
+                <option value="150k-plus">$150k+</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="message">Tell us about your project</label>
+            <textarea id="message" name="message" placeholder="What are you trying to build or fix?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note">By submitting, you agree to be contacted by Ichiro Consulting about your enquiry.</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="mark">乙</span>
+          Ichiro Consulting
+        </a>
+        <p>Software and digital transformation consultancy helping companies design, build, and scale systems that work.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Cloud Migration</a></li>
+          <li><a href="services.html">AI &amp; ML Integration</a></li>
+          <li><a href="services.html">Custom Software</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@ichiro.consulting">hello@ichiro.consulting</a></li>
+          <li><a href="contact.html">Book a Consult</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Ichiro Consulting. All rights reserved.</span>
+      <span>Built with care, hosted on GitHub Pages.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
