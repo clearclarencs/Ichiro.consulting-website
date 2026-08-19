@@ -363,12 +363,15 @@ section { padding: 88px 0; }
 }
 
 .founder-card .avatar-lg {
-  width: 72px;
-  height: 72px;
+  display: block;
+  width: 112px;
+  height: 112px;
   border-radius: 50%;
   background: var(--bg-alt);
   border: 1px solid var(--border);
   margin-bottom: 20px;
+  object-fit: cover;
+  object-position: 62% 45%;
 }
 
 .founder-card h3 { margin: 0 0 4px; }
