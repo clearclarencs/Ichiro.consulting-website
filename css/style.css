@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo:ital,wght@0,600;1,800&family=Nunito:wght@400;800&family=Oswald:wght@600&family=Playfair+Display:ital,wght@1,600&family=Space+Grotesk:wght@700&display=swap");
 
 :root {
   --bg: #f7f7f8;
@@ -254,31 +254,37 @@ section { padding: 88px 0; }
 .client-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 0 32px;
-  height: 48px;
-  color: #8b8e94;
-  font-size: 1.3rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  gap: 0.45em;
+  padding: 0 44px;
+  height: 64px;
+  font-size: 1.6rem;
+  line-height: 1;
   white-space: nowrap;
-  transition: color 0.2s ease;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
 }
 
-.client-logo:hover { color: var(--text); }
+.client-logo:hover { opacity: 1; }
 
-.client-logo svg { width: 28px; height: 28px; flex: none; }
-
-.client-logo.is-caps { text-transform: uppercase; font-size: 1.05rem; letter-spacing: 0.08em; }
-.client-logo.is-light { font-weight: 500; letter-spacing: -0.01em; }
-.client-logo.is-serif { font-family: Georgia, "Times New Roman", serif; font-weight: 600; letter-spacing: 0; }
-.client-logo.is-serif.is-caps { letter-spacing: 0.14em; }
-
+.client-logo .mark { height: 1.5em; width: auto; flex: none; }
+.client-logo .word { display: flex; flex-direction: column; justify-content: center; }
 .client-logo b { font-weight: inherit; }
+.client-logo small { display: block; }
 
-.client-logo-stack span { display: flex; flex-direction: column; line-height: 1; }
-.client-logo-stack b { font-weight: 800; font-size: 1.05rem; letter-spacing: 0.06em; }
-.client-logo-stack small { font-size: 0.62rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; margin-top: 4px; }
+/* Client brand lockups */
+.logo-sbl .word { font-family: "Oswald", Impact, sans-serif; font-weight: 600; color: #14234B; text-transform: uppercase; letter-spacing: 0.04em; }
+.logo-sbl small { font-size: 0.38em; color: #A8871A; letter-spacing: 0.42em; margin-top: 0.3em; }
+
+.logo-cyd .word { font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif; font-weight: 700; color: #16123A; letter-spacing: -0.05em; font-size: 1.05em; }
+
+.logo-pol .word { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 600; color: #1F5F6B; font-size: 1.1em; letter-spacing: 0.01em; }
+
+.logo-gts .word { font-family: "Archivo", "Arial Black", sans-serif; color: #1C1C1E; text-transform: uppercase; }
+.logo-gts b { font-weight: 800; font-style: italic; letter-spacing: -0.01em; }
+.logo-gts small { font-size: 0.34em; font-weight: 600; color: #D7261E; letter-spacing: 0.3em; margin-top: 0.35em; }
+
+.logo-mgw .word { flex-direction: row; align-items: baseline; gap: 0.12em; font-family: "Nunito", "Helvetica Neue", Arial, sans-serif; font-weight: 400; color: #0E9F6E; letter-spacing: -0.02em; }
+.logo-mgw b { font-weight: 800; color: #0B3B2E; }
 
 /* Customer stories */
 .story-grid {
@@ -303,9 +309,7 @@ section { padding: 88px 0; }
 
 .story-card:hover { border-color: var(--text); transform: translateY(-2px); }
 
-.story-card .client-logo { padding: 0; height: auto; margin-bottom: 20px; color: var(--text); font-size: 1.15rem; }
-.story-card .client-logo.is-caps { font-size: 0.95rem; }
-.story-card .client-logo svg { width: 24px; height: 24px; }
+.story-card .client-logo { padding: 0; height: 44px; margin-bottom: 20px; font-size: 1.4rem; opacity: 1; }
 
 .story-card h3 { margin: 0 0 10px; font-size: 1.1rem; letter-spacing: -0.01em; line-height: 1.35; }
 .story-card p { color: var(--text-dim); font-size: 0.93rem; margin: 0 0 20px; }
@@ -625,7 +629,7 @@ footer.site-footer {
   .values-grid { grid-template-columns: repeat(2, 1fr); }
   .service-detail { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
-  .client-logo { padding: 0 20px; font-size: 1.1rem; }
+  .client-logo { padding: 0 28px; font-size: 1.3rem; }
   .story-grid { grid-template-columns: 1fr; }
   .story-card, .story-card:nth-child(-n+2) { grid-column: auto; }
 }
