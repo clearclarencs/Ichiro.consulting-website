@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo:ital,wght@0,600;1,800&family=Nunito:wght@400;800&family=Oswald:wght@600&family=Playfair+Display:ital,wght@1,600&family=Space+Grotesk:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo:ital,wght@1,900&family=Barlow+Condensed:wght@600&family=Cormorant+Garamond:wght@500&family=Nunito:wght@900&family=Oswald:wght@600;700&family=Pacifico&family=Unbounded:wght@700&display=swap");
 
 :root {
   --bg: #f7f7f8;
@@ -254,37 +254,38 @@ section { padding: 88px 0; }
 .client-logo {
   display: flex;
   align-items: center;
-  gap: 0.45em;
-  padding: 0 44px;
-  height: 64px;
+  justify-content: center;
+  padding: 0 48px;
+  height: 96px;
   font-size: 1.6rem;
   line-height: 1;
   white-space: nowrap;
-  opacity: 0.85;
+  opacity: 0.88;
   transition: opacity 0.2s ease;
 }
 
 .client-logo:hover { opacity: 1; }
 
-.client-logo .mark { height: 1.5em; width: auto; flex: none; }
-.client-logo .word { display: flex; flex-direction: column; justify-content: center; }
-.client-logo b { font-weight: inherit; }
-.client-logo small { display: block; }
+.client-logo svg { display: block; flex: none; }
+.client-logo i, .client-logo small { font-style: normal; display: block; }
 
-/* Client brand lockups */
-.logo-sbl .word { font-family: "Oswald", Impact, sans-serif; font-weight: 600; color: #14234B; text-transform: uppercase; letter-spacing: 0.04em; }
-.logo-sbl small { font-size: 0.38em; color: #A8871A; letter-spacing: 0.42em; margin-top: 0.3em; }
+/* Client brand lockups: deliberately unrelated styles */
+.logo-sbl .badge { height: 2.9em; width: 2.9em; }
 
-.logo-cyd .word { font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif; font-weight: 700; color: #16123A; letter-spacing: -0.05em; font-size: 1.05em; }
+.logo-cyd .word { font-family: "Unbounded", "Arial Black", sans-serif; font-weight: 700; font-size: 1.05em; color: #111111; letter-spacing: -0.04em; }
+.logo-cyd i { display: inline; color: #FF2E7E; }
 
-.logo-pol .word { font-family: "Playfair Display", Georgia, serif; font-style: italic; font-weight: 600; color: #1F5F6B; font-size: 1.1em; letter-spacing: 0.01em; }
+.logo-pol { flex-direction: column; gap: 0.25em; }
+.logo-pol .mark { height: 1.15em; width: auto; }
+.logo-pol .word { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; font-size: 0.95em; color: #1F5F6B; text-transform: uppercase; letter-spacing: 0.34em; margin-right: -0.34em; }
 
-.logo-gts .word { font-family: "Archivo", "Arial Black", sans-serif; color: #1C1C1E; text-transform: uppercase; }
-.logo-gts b { font-weight: 800; font-style: italic; letter-spacing: -0.01em; }
-.logo-gts small { font-size: 0.34em; font-weight: 600; color: #D7261E; letter-spacing: 0.3em; margin-top: 0.35em; }
+.logo-gts { gap: 0.4em; }
+.logo-gts .plate { font-family: "Archivo", "Arial Black", sans-serif; font-weight: 900; font-style: italic; font-size: 0.8em; color: #ffffff; text-transform: uppercase; letter-spacing: 0.02em; background: #D7261E; padding: 0.38em 0.9em 0.32em 0.8em; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%); }
+.logo-gts .word { font-family: "Barlow Condensed", "Arial Narrow", sans-serif; font-weight: 600; font-size: 0.5em; color: #1C1C1E; text-transform: uppercase; letter-spacing: 0.1em; line-height: 1.05; border-left: 2px solid #D7261E; padding-left: 0.5em; }
 
-.logo-mgw .word { flex-direction: row; align-items: baseline; gap: 0.12em; font-family: "Nunito", "Helvetica Neue", Arial, sans-serif; font-weight: 400; color: #0E9F6E; letter-spacing: -0.02em; }
-.logo-mgw b { font-weight: 800; color: #0B3B2E; }
+.logo-mgw { gap: 0.2em; }
+.logo-mgw .bubble { height: 1.8em; width: auto; }
+.logo-mgw .word { font-family: "Pacifico", "Brush Script MT", cursive; font-size: 1em; color: #0E9F6E; padding-bottom: 0.3em; }
 
 /* Customer stories */
 .story-grid {
@@ -309,7 +310,7 @@ section { padding: 88px 0; }
 
 .story-card:hover { border-color: var(--text); transform: translateY(-2px); }
 
-.story-card .client-logo { padding: 0; height: 44px; margin-bottom: 20px; font-size: 1.4rem; opacity: 1; }
+.story-card .client-logo { align-self: flex-start; padding: 0; height: 3.2em; margin-bottom: 16px; font-size: 1.3rem; opacity: 1; }
 
 .story-card h3 { margin: 0 0 10px; font-size: 1.1rem; letter-spacing: -0.01em; line-height: 1.35; }
 .story-card p { color: var(--text-dim); font-size: 0.93rem; margin: 0 0 20px; }
@@ -483,6 +484,10 @@ section { padding: 88px 0; }
   object-fit: cover;
   object-position: 62% 45%;
 }
+
+.founder-card .avatar-lg.avatar-center { object-position: 50% 40%; }
+
+.team-stack { display: grid; gap: 20px; }
 
 .founder-card h3 { margin: 0 0 4px; }
 .founder-card .role { color: var(--text-dim); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 16px; }
