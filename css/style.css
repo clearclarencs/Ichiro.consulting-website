@@ -288,8 +288,8 @@ section { padding: 88px 0; }
 .logo-mgw .word { font-family: "Pacifico", "Brush Script MT", cursive; font-size: 1em; color: #0E9F6E; padding-bottom: 0.3em; }
 
 .logo-mwc { gap: 0.35em; }
-.logo-mwc .mark { height: 1.9em; width: auto; mix-blend-mode: multiply; }
-.logo-mwc .word { display: flex; flex-direction: column; font-family: "Lexend", "Helvetica Neue", Arial, sans-serif; font-weight: 400; font-size: 0.62em; color: #2A8C86; line-height: 1.1; letter-spacing: -0.01em; }
+.logo-mwc .mark { height: 2.2em; width: auto; }
+.logo-mwc .word { display: flex; flex-direction: column; font-family: "Lexend", "Helvetica Neue", Arial, sans-serif; font-weight: 400; font-size: 0.72em; color: #2A8C86; line-height: 1.1; letter-spacing: -0.01em; }
 .logo-mwc b { font-weight: 700; font-size: 1.3em; color: #00474F; }
 
 /* Customer stories */
@@ -313,7 +313,7 @@ section { padding: 88px 0; }
 
 .story-card:hover { border-color: var(--text); transform: translateY(-2px); }
 
-.story-card .client-logo { align-self: flex-start; padding: 0; height: 3.2em; margin-bottom: 16px; font-size: 1.3rem; opacity: 1; }
+.story-card .client-logo { align-self: center; padding: 0; height: 3.2em; margin-bottom: 16px; font-size: 1.3rem; opacity: 1; }
 
 .story-card h3 { margin: 0 0 10px; font-size: 1.1rem; letter-spacing: -0.01em; line-height: 1.35; }
 .story-card p { color: var(--text-dim); font-size: 0.93rem; margin: 0 0 20px; }
