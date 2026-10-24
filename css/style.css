@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Archivo:ital,wght@1,900&family=Barlow+Condensed:wght@600&family=Cormorant+Garamond:wght@500&family=Nunito:wght@900&family=Oswald:wght@600;700&family=Pacifico&family=Unbounded:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend:wght@400;700&family=Archivo:ital,wght@1,900&family=Barlow+Condensed:wght@600&family=Cormorant+Garamond:wght@500&family=Nunito:wght@900&family=Oswald:wght@600;700&family=Pacifico&family=Unbounded:wght@700&display=swap");
 
 :root {
   --bg: #f7f7f8;
@@ -287,6 +287,11 @@ section { padding: 88px 0; }
 .logo-mgw .bubble { height: 1.8em; width: auto; }
 .logo-mgw .word { font-family: "Pacifico", "Brush Script MT", cursive; font-size: 1em; color: #0E9F6E; padding-bottom: 0.3em; }
 
+.logo-mwc { gap: 0.35em; }
+.logo-mwc .mark { height: 1.9em; width: auto; mix-blend-mode: multiply; }
+.logo-mwc .word { display: flex; flex-direction: column; font-family: "Lexend", "Helvetica Neue", Arial, sans-serif; font-weight: 400; font-size: 0.62em; color: #2A8C86; line-height: 1.1; letter-spacing: -0.01em; }
+.logo-mwc b { font-weight: 700; font-size: 1.3em; color: #00474F; }
+
 /* Customer stories */
 .story-grid {
   display: grid;
@@ -305,8 +310,6 @@ section { padding: 88px 0; }
   padding: 28px;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
-
-.story-card:nth-child(-n+2) { grid-column: span 3; }
 
 .story-card:hover { border-color: var(--text); transform: translateY(-2px); }
 
@@ -636,5 +639,5 @@ footer.site-footer {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .client-logo { padding: 0 28px; font-size: 1.3rem; }
   .story-grid { grid-template-columns: 1fr; }
-  .story-card, .story-card:nth-child(-n+2) { grid-column: auto; }
+  .story-card { grid-column: auto; }
 }
